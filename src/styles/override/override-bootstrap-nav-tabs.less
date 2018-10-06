@@ -1,0 +1,49 @@
+.nav-tabs {
+  border-bottom: 0;
+
+  .nav-link {
+    white-space: nowrap;
+  }
+
+  .nav-item .nav-link,
+  .nav-link:focus,
+  .nav-link:hover {
+    padding: 1rem 1rem;
+    border-color: @color-orange-lightest @color-orange-lightest @color-white;
+    font-size: 19px;
+    color: @color-orange-light !important;
+    background: darken(@color-orange-lightest, 2);
+  }
+
+  .nav-link.active {
+    background: @color-white;
+    border-top-width: 3px;
+    border-color: @color-orange-lighter @color-orange-lightest @color-white;
+    color: @color-orange-light;
+  }
+}
+
+
+
+// Added styles
+.tab-content {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: @color-white;
+  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.04);
+  padding: 3rem;
+}
+
+@media (max-width: 992px) {
+  .tab-content {
+    padding: 1.5rem;
+  }
+}
+
+.tab-content p {
+  line-height: 1.8;
+}
+
+.tab-content h2 {
+  margin-bottom: 0.5rem;
+}

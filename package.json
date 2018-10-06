@@ -1,0 +1,32 @@
+{
+  "name": "Today",
+  "title": "Today",
+  "version": "0.0.1",
+  "author": "MariskaS",
+  "license": {
+    "type": "MIT",
+    "url": ""
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-less": "^3.4.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "rimraf": "^2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MariskaS/td-med"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}

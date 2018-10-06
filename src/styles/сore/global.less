@@ -1,0 +1,126 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: @font-base;
+  position: relative;
+  color: @color-font-base;
+  overflow-x: hidden;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+header {
+  padding: 100px 0 90px 0;
+  text-align: center;
+  color: @color-white;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+
+  h1,
+  .td-title {
+    font-weight: 500;
+  }
+
+  h1 {
+    @media (max-width: 767px) {
+      & {
+        font-size: calc(@font-h1 - 20px);
+      }
+    }
+  }
+
+  .td-title {
+    font-size: calc(@font-h1 - 20px);
+
+    a {
+      border-bottom: 3px solid rgba(255, 109, 23, .5);
+
+      &:hover {
+        color: rgba(255, 109, 23, .75) !important;
+      }
+    }
+
+    @media (max-width: 767px) {
+      & {
+        font-size: calc(@font-h1 - 40px);
+      }
+    }
+  }
+}
+
+.light-bg {
+  background-color: @color-orange-lightest;
+}
+
+.header-bg {
+  background-image: url(../img/header-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 28%;
+}
+
+.bg-gradient {
+  position: relative;
+  background-image: @bg-gradient;
+  color: @color-white;
+
+  h2, h3, h4, a {
+    color: @color-white !important;
+  }
+
+  a {
+    border-bottom: 1px solid @color-white !important;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: transparent !important;
+    }
+  }
+
+  hr {
+    background-color: @color-white;
+  }
+}
+
+.bg-gradient--pattern {
+  .bg-gradient;
+  background-image: none;
+  overflow: hidden;
+
+  &:before {
+    background: @bg-gradient;
+    z-index: -2;
+  }
+
+  &:after {
+    background: url('../../img/pattern-white.svg') repeat fixed;
+    z-index: -1;
+    opacity: 0.1;
+    left: 0;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.td-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+

@@ -1,0 +1,77 @@
+.nav-menu {
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.nav-menu.is-scrolling,
+.nav-menu.menu-is-open {
+  background-color: @color-white;
+  -moz-box-shadow: 0 5px 23px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 23px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu.is-scrolling {
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: @color-font-base !important;
+
+
+  // For Desktop
+  @media (min-width: 992px) {
+    & {
+      color: rgba(255, 255, 255, .5) !important;
+
+      &:hover {
+        color: rgba(255, 255, 255, .75) !important;
+      }
+      &.active {
+        color: @color-white !important;
+      }
+    }
+  }
+}
+
+.navbar-toggler {
+  font-size: @font-toggle;
+  cursor: pointer;
+  .ti-menu {
+    color: @color-orange-light;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.is-scrolling {
+  .navbar-nav .nav-link {
+    position: relative;
+    color: @color-font-base !important;
+
+    &.active,
+    &:hover {
+      color: @color-orange-light !important;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav.is-scrolling {
+    padding-bottom: 1rem;
+  }
+
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
+}

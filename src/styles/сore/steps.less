@@ -1,0 +1,71 @@
+.td-steps {
+  position: relative;
+
+  .td-step {
+    display: flex;
+    position: relative;
+
+    &-icon {
+      width: 40px;
+      min-width: 40px;
+      height: 40px;
+      background-color: @color-white;
+      box-shadow: 0 9px 32px 0 rgba(0,0,0,.07);
+      color: @color-pink-dark !important;
+      border-radius: 50%;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 30px;
+
+      &:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: "";
+        width: 2px;
+        background-color: darken(@color-orange-lightest, 4);
+        left: 20px;
+      }
+    }
+
+    &:hover {
+      .td-step-icon {
+        background-color: @color-pink-dark;
+        color: @color-white !important;
+      }
+    }
+  }
+
+  .td-step-content {
+    position: relative;
+    padding-left: 5%;
+  }
+
+  @media (min-width: 574px) {
+    & {
+      .td-step-icon {
+        width: 80px;
+        min-width: 80px;
+        height: 80px;
+        font-size: 44px;
+      }
+
+      .td-step {
+        &:not(:last-child) {
+          padding-bottom: 50px;
+
+          &:before {
+            left: 40px;
+          }
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,45 @@
+.td-icon-gradient {
+  color: @color-orange-light;
+
+  &:before {
+    color: #fc73b4;
+    background: @bg-gradient-to-bottom;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/**
+* Social Icons
+ */
+.social-icons {
+  font-weight: 600;
+
+  a {
+    background-color: @color-white;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.05);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 0.3rem;
+    border-radius: 5px;
+    color: @color-pink-dark !important;
+    transition: all 0.3s ease;
+
+    span {
+      color: @color-pink-dark !important;
+    }
+  }
+
+  @media (max-width: 991px) {
+   & {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+}
+
+
